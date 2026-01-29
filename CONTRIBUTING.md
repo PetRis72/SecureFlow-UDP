@@ -56,9 +56,9 @@ This means all your commits for a specific feature will be combined into one sin
 
 ## ⚖ Attribution & Ownership
 As specified in the project license:
-* This is an open-source project, but **[Your Name]** remains the lead author and owner.
+* This is an open-source project, but **Peter Risberg/PetRis72** remains the lead author and owner.
 * All contributors will be credited in the git history.
-* If you use this base code for your own project, you **must** link back to this original repository.
+* If you use this base code for your own project, you **must** link back to this original repository and mention the original author in your documentation or "About" section.
 
 ---
 *Thank you for helping make SecureFlow-UDP faster and more secure!*
