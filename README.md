@@ -95,8 +95,19 @@ https://github.com/PetRis72/SecureFlow-UDP
 Original work of Peter Risberg/PetRis72
 ```
 
+## Future Roadmap (Next Steps)
+This project serves as a base for high-performance networking. Future developments could include:
+
+* **Diffie-Hellman Key Exchange:** Automated secure key handshakes.
+
+* **Forward Error Correction (FEC):** Reducing retransmissions by sending redundant data.
+
+* **Adaptive Rate Control:** Real-time bandwidth adjustment based on network congestion.
+
+* **Mobile Port:** A mobile-friendly version of the UI for remote monitoring.
+
 ## MIT License
-**Copyright (c) 2024 Peter Risberg**
+**Copyright (c) 2026 Peter Risberg**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
