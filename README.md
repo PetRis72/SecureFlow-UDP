@@ -81,9 +81,6 @@ Observe the Sniffer terminal to see the intercepted, encrypted Hex data.
 
 * **Auto-Save:** Received files are automatically reassembled and saved to the /downloads folder.
 
-## License
-This project is licensed under the MIT License.
-
 ## Attribution
 This project is the original work of [Peter Risberg/PetRis72]. 
 
@@ -98,10 +95,8 @@ https://github.com/PetRis72/SecureFlow-UDP
 Original work of Peter Risberg/PetRis72
 ```
 
-
 ## MIT License
-
-Copyright (c) 2024 Peter Risberg
+**Copyright (c) 2024 Peter Risberg**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
