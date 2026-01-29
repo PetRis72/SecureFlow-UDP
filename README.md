@@ -9,6 +9,7 @@ A high-speed, military-grade secure UDP protocol implemented in Python. This pro
 * **Selective Repeat & Reset:** Efficient packet loss recovery and a "Security Valve" for automatic hard resets during persistent blockages.
 * **MITM-Proof:** Verified against Man-in-the-Middle attacks using AES-256-GCM.
 
+## Installation / Setup
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/PetRis72/SecureFlow-UDP.git](https://github.com/PetRis72/SecureFlow-UDP.git)
