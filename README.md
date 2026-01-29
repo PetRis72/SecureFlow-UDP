@@ -13,6 +13,7 @@ A high-speed, military-grade secure UDP protocol implemented in Python. This pro
 Ensure you have Python 3.x installed, then run:
 ```bash
 pip install PyQt6 cryptography
+```
 
 ## How to Test
 **1. Node 1 (Listener/Sender):** `python main_node.py 9999 9998`
