@@ -37,42 +37,50 @@ A high-speed, military-grade secure UDP protocol implemented in Python. This pro
     pip install -r requirements.txt
     ```
 
-## How to Test (Local Simulation)
+## Usage Modes
 
-To see the protocol, the security valve, and the MITM protection in action, you need to open **three separate terminal windows**.
+### **1. Normal Mode (Direct Secure Communication)**
+Use this for standard peer-to-peer communication. The nodes connect directly to each other.
 
-### Step 1: Start the Security Auditor (MITM)
-In the first terminal, run the sniffer. This acts as the "hacker" watching your network traffic.
+* **Terminal 1 (Node A):**
 ```bash
-# Terminal 1
-python mitm_sniffer.py
-```
-
-### Step 2: Start Node 1
-In the second terminal, start the first user. It will listen on port 9999 and send data to 9998.
-```bash
-# Terminal 2
 python main_node.py 9999 9998
 ```
 
-### Step 3: Start Node 2
-In the third terminal, start the second user. It will listen on port 9998 and send data to 9999.
+* **Terminal 2 (Node B):**
 ```bash
-# Terminal 3
 python main_node.py 9998 9999
 ```
 
-### What to Observe:
-1. **Chat:** Type a message in Node 1. You will see it appear in Node 2 instantly.
+### **2. Demo Mode (With MITM Sniffer/Proxy)**
+Use this to verify that the encryption works. All traffic is routed through the sniffer, which attempts to "read" the data in the middle.
 
-2. **Security:** Look at **Terminal 1 (Sniffer)**. You will see encrypted hex-strings. You'll notice that you cannot read the messages, and you cannot tell if it's a chat message or a protocol reset command.
+* **Terminal 1 (The Sniffer):**
+```bash
+python mitm_sniffer.py
+```
 
-3. **Logs:** Check the green "Technical Log" in the GUI to see sequence numbers and encryption confirmations for every packet.
+* **Terminal 2 (Node A):**
+```bash
+python mitm_sniffer.py
+```
 
+* **Terminal 3 (Node B):**
+```bash
+python mitm_sniffer.py
+```
+
+Observe the Sniffer terminal to see the intercepted, encrypted Hex data.
 
 ## Technical Details
-* **Encryption: AES-256-GCM** (Authenticated Encryption with Associated Data).
+* **Full Metadata Encryption:** Unlike standard protocols, SecureFlow encrypts the entire packet, including headers and sequence numbers.
 
-* **Transport:** UDP (User Datagram Protocol).
+* **AES-256-GCM:** Authenticated encryption ensures that data cannot be modified in transit.
 
-* **GUI:** PyQt6 for real-time monitoring and logging.
+* **Aspera-Style Pacing:** Controlled UDP streaming to maximize bandwidth without causing network congestion.
+
+* **Auto-Save:** Received files are automatically reassembled and saved to the /downloads folder.
+
+## License
+This project is licensed under the MIT License.
+
