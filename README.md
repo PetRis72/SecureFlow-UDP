@@ -11,7 +11,7 @@ A high-speed, military-grade secure UDP protocol implemented in Python. This pro
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/SecureFlow-UDP.git](https://github.com/yourusername/SecureFlow-UDP.git)
+   git clone [https://github.com/PetRis72/SecureFlow-UDP.git](https://github.com/PetRis72/SecureFlow-UDP.git)
    cd SecureFlow-UDP
    ```
 
