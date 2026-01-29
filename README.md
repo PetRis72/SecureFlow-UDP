@@ -30,12 +30,12 @@ A high-speed, military-grade secure UDP protocol implemented in Python. This pro
 2. **Set up a virtual environment:**
     ```bash
     # Windows
-    python -m venv venv
-    venv\Scripts\activate
+    python -m venv .venv
+    .venv\Scripts\activate
 
     # macOS/Linux
-    python3 -m venv venv
-    source venv/bin/activate
+    python3 -m venv .venv
+    source .venv/bin/activate
     ```
 3. **Install dependencies:**
     ```bash
