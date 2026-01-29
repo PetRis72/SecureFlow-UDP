@@ -67,12 +67,12 @@ python mitm_sniffer.py
 
 * **Terminal 2 (Node A):**
 ```bash
-python mitm_sniffer.py
+python main_node.py 9999 8881
 ```
 
 * **Terminal 3 (Node B):**
 ```bash
-python mitm_sniffer.py
+python main_node.py 9998 8882
 ```
 
 Observe the Sniffer terminal to see the intercepted, encrypted Hex data.
