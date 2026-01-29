@@ -136,3 +136,4 @@ if __name__ == "__main__":
     window = SecureFlowUI(local_p, "127.0.0.1", target_p)
     window.show()
     sys.exit(app.exec())
+    

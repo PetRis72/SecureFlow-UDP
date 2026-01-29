@@ -37,3 +37,4 @@ if __name__ == "__main__":
     print("[*] Sniffer is running. Press Ctrl+C to stop.")
     t1.join()
     t2.join()
+    

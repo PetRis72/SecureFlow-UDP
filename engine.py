@@ -141,3 +141,4 @@ class SecureEngine(QThread):
         time.sleep(0.05)
         self.send_secure(2, b"EOF")
         self.log_signal.emit(f"TRANSFER COMPLETE: {filename}")
+        
