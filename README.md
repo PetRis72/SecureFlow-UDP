@@ -9,7 +9,7 @@ A high-speed, military-grade secure UDP protocol implemented in Python. This pro
 * **Selective Repeat & Reset:** Efficient packet loss recovery and a "Security Valve" for automatic hard resets during persistent blockages.
 * **MITM-Proof:** Verified against Man-in-the-Middle attacks using AES-256-GCM.
 
-## 📂 Project Structure
+## Project Structure
 * **`main_node.py`**: The Graphical User Interface (GUI) built with PyQt6.
 * **`engine.py`**: The core protocol logic (Encryption, Sockets, and Threading).
 * **`mitm_sniffer.py`**: Security auditing tool to verify encryption.
