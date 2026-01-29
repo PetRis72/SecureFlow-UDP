@@ -37,27 +37,24 @@ To see the protocol, the security valve, and the MITM protection in action, you 
 
 ### Step 1: Start the Security Auditor (MITM)
 In the first terminal, run the sniffer. This acts as the "hacker" watching your network traffic.
-
-    ```bash
-    # Terminal 1
-    python mitm_sniffer.py
-    ```
+```bash
+# Terminal 1
+python mitm_sniffer.py
+```
 
 ### Step 2: Start Node 1
 In the second terminal, start the first user. It will listen on port 9999 and send data to 9998.
-
-    ```bash
-    # Terminal 2
-    python main_node.py 9999 9998
-    ```
+```bash
+# Terminal 2
+python main_node.py 9999 9998
+```
 
 ### Step 3: Start Node 2
 In the third terminal, start the second user. It will listen on port 9998 and send data to 9999.
-
-    ```bash
-    # Terminal 3
-    python main_node.py 9998 9999
-    ```
+```bash
+# Terminal 3
+python main_node.py 9998 9999
+```
 
 ### What to Observe:
 1. **Chat:** Type a message in Node 1. You will see it appear in Node 2 instantly.
