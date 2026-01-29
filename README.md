@@ -89,9 +89,11 @@ This project is the original work of [Peter Risberg/PetRis72].
 
 If you choose to fork, copy, or use this base code in your own projects, you are **required** to:
 1. Provide a clear link back to this original GitHub repository. 
-    `https://github.com/PetRis72/SecureFlow-UDP`
+`https://github.com/PetRis72/SecureFlow-UDP`
+
 2. Mention the original author in your documentation or "About" section.
-    `Original work of Peter Risberg/PetRis72`
+`Original work of Peter Risberg/PetRis72`
+
 
 ## MIT License
 
